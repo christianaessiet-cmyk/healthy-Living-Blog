@@ -625,82 +625,80 @@ header{
         CONTACT
 ==========================================*/
 
+/*==========================================
+        CONTACT
+==========================================*/
+
 .contact{
 
     background:#0d1b2a;
+    padding:90px 8%;
 
 }
 
-.contact form{
+.contact-form{
 
-    max-width:700px;
-
+    max-width:900px;
     margin:40px auto;
 
-    display:flex;
+}
 
-    flex-direction:column;
+.input-group{
 
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
     gap:20px;
+    margin-bottom:20px;
 
 }
 
-.contact input,
-
-.contact textarea{
+.contact-form input,
+.contact-form textarea{
 
     width:100%;
-
     padding:18px;
-
     border:none;
-
     border-radius:12px;
-
     background:#13283f;
-
-    color:white;
-
+    color:#ffffff;
     font-size:16px;
-
     outline:none;
 
 }
 
-.contact textarea{
+.contact-form input{
+
+    margin-bottom:20px;
+
+}
+
+.contact-form textarea{
 
     min-height:180px;
-
-    resize:none;
+    resize:vertical;
+    margin-bottom:20px;
 
 }
 
-.contact button{
+.contact-form button{
 
-    padding:16px;
-
-    border:none;
-
+    display:inline-block;
+    padding:16px 35px;
     background:#2E7D32;
-
-    color:white;
-
+    color:#ffffff;
+    border:none;
     border-radius:40px;
-
     cursor:pointer;
-
-    transition:.4s;
+    transition:.3s;
 
 }
 
-.contact button:hover{
+.contact-form button:hover{
 
     background:#66BB6A;
-
-    color:#08111d;
+    color:#08131d;
 
 }
-
 /*==========================================
             FOOTER
 ==========================================*/
@@ -973,6 +971,11 @@ header{
 .social-icons{
 
     justify-content:center;
+
+}
+.input-group{
+
+    grid-template-columns:1fr;
 
 }
 
